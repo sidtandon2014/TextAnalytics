@@ -1,0 +1,23 @@
+
+with cte 
+AS
+(
+	SELECT 
+	id
+	,CHARINDEX(' ',postContent,1) Pos
+	,postContent AS TextVal
+	, 1 AS Occ
+	FROM [dbo].[leads]
+	--WHERE id = 1
+
+	UNION ALL
+	
+	SELECT id,CHARINDEX(' ',TextVal,Pos+1),TextVal, Occ+1
+	FROM cte
+	WHERE Occ <5
+)
+
+SELECT SUBSTRING(postContent,y.pos,LEN(postContent)) 
+FROM dbo.LEads x
+JOIN (SELECT id,MAX(Pos) Pos FROM cte GROUP BY id) y
+	ON x.id = y.id

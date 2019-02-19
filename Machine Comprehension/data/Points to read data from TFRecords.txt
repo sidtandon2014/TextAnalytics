@@ -1,0 +1,17 @@
+queue runners, coordinators, supervisors
+
+should have used tf-slim
+
+
+------one way
+	http://warmspringwinds.github.io/tensorflow/tf-slim/2016/12/21/tfrecords-guide/
+
+tf_record_iterator (deprecated). Instead use tf.data.TFRecordDataset
+
+
+
+---------2nd
+http://www.machinelearninguru.com/deep_learning/tensorflow/basics/tfrecord/tfrecord.html
+
+string_input_producer
+tf.TFRecordReader(Deprecated). Readers are not compatible with eager execution. Instead, please use tf.data to get data into your model.

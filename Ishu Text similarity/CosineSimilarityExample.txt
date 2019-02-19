@@ -1,0 +1,4 @@
+http://hadoopgeek.com/cosine-similarity-simple-example/
+
+http://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/
+

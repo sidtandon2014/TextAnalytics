@@ -1,0 +1,3 @@
+Word2Vec algorithm from Google
+the GloVe algorithm from Stanford
+the fasttext algorithm from Facebook.

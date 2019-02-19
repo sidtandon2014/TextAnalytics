@@ -1,0 +1,21 @@
+Load data
+Clean data
+Implement word2vec
+Implement following algorithms with cross fold
+	Naive Bayes
+		BernoulliNB
+		Gaussian NB
+		Multinomial NB
+	SVC
+		Linear SVC
+		Polynomial SVC
+		RbfSVC
+		NuSVC
+	Maximum Entropy Model
+		GIS
+		IIS
+		MEGAM
+		TADM
+	RNN
+
+Implement ensembling
